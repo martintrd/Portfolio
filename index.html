@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Montserrat:wght@300&Oswald:wght@500&family=Ramabhadra&family=Work+Sans:wght@300&display=swap');</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<title>Tardieu Martin</title>
+	</head>
+		<body>
+			<script>
+				$(window).bind('load',function(){
+					$('#load').css({
+						'opacity' : '0'
+					});
+					$('#load').css({
+						'z-index' : '0'
+					});
+				});
+				$(window).ready(function(){
+					if ($(window).width() <= 768) {  
+
+					}     
+				});
+				$(window).resize(function(){
+					if ($(window).width() <= 768) {  
+
+					}else{
+
+					} 
+				});
+				$(window).on('scroll',function() {
+					var scrollTop = $(window).scrollTop();
+					if ( scrollTop > $('.filtre').offset().top ) { 
+						$('#div4').css({
+							'opacity' : '1',
+							'left' : '10vw',
+							'box-shadow' : '-50px 0px 0px rgba(26, 196, 187, 15%)'
+						})
+						$('#p1').css({
+							'opacity' : '1'
+						})
+						$('#p1').css({
+							'margin-bottom' : '0'
+						})
+					}
+				});
+				$(document).ready(function(){
+					let bouton=0
+					$("#menu").click(function(){
+						if (bouton==0) {
+							$("#mb2").css({
+								"position" : "absolute",
+								"color" : "rgb(47, 47, 47)"
+							});
+							$("#mb1").css({
+								"right" : "10px",
+								"transform" : "rotate(45deg)"
+							});
+							$("#mb3").css({
+								"left" : "10px",
+								"transform" : "rotate(-45deg)"
+							});
+							$("#mtopbar").css({
+								"left" : "0"
+							});
+							bouton=1
+						}
+						else {
+							$("#mb2").css({
+								"color" : "white"
+							});
+							$("#mb1").css({
+								"right" : "20px",
+								"transform" : "rotate(0deg)"
+							});
+							$("#mb3").css({
+								"left" : "20px",
+								"transform" : "rotate(0deg)"
+							});
+							$("#mtopbar").css({
+								"left" : "-100vw"
+							});
+							bouton=0
+						}
+					});
+				});
+			</script>
+			<div id="load"><div id="dot1"></div><div id="dot2"></div></div>
+			<div id="topbar">
+				<div id="menu">
+					<h1 class="menubar" id="mb1">|</h1>
+					<h1 class="menubar" id="mb2">|</h1>
+					<h1 class="menubar" id="mb3">|</h1>
+				</div>
+				<div id="mtopbar">
+					<a class="Tall" href="#ancre1"><h1 class="Tall" id="T2">ACCUEIL</h1></a>
+					<a class="Tall" href="#ancre2"><h1 class="Tall" id="T3">PRESENTATION</h1></a>
+					<a class="Tall" href="#ancre3"><h1 class="Tall" id="T4">COMPETENCES</h1></a>
+					<a class="Tall" href="#bT5"><h1 class="Tall" id="T5">CONTACT</h1></a>
+				</div>
+			</div>
+				<div id="ancre1"></div>
+				<div id="div1">
+					<div class="filtre">
+						<div id="daccueil">
+							<h2 id="T6">Portfolio de</h2>
+							<h1 id="T7">Tardieu Martin</h1>
+						</div>
+					</div>
+				</div>
+				<div id="ancre2"></div>
+					<div id="div2">
+						<div id="div3">
+							<div id="div4">
+								<img src="imgs/moi.jpg" id="img1">
+							</div>
+							<p id="p1">Actuellement étudiant en 1ère année de BUT Réseau et Télécoms à Béziers, je suis intéressé par l'informatique depuis la classe de seconde. En effet, j'ai commencé à prendre goût à cette matière après avoir découvert le web design ainsi que la programmation python.</p>
+						</div>
+					</div>
+					<div id="ancre3"></div>
+						<div id="div5">
+							<h1 id="T8">Mes compétences techniques</h1>
+							<div class="case" id="html"></div>
+							<div class="case" id="css"></div>
+							<div class="case" id="jquery"></div>
+						</div>
+						<div id="ancre4"></div>
+							<div id="div6">
+								<h1 id="T9">Contact</h1>
+							</div>
+		</body>
+</html>
