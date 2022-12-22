@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Montserrat:wght@300&Oswald:wght@500&family=Ramabhadra&family=Work+Sans:wght@300&display=swap');</style>
+	<style>@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Syncopate&family=Kanit:wght@800&family=Montserrat:wght@300&Oswald:wght@500&family=Ramabhadra&family=Work+Sans:wght@300&display=swap');</style>
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<title>Tardieu Martin</title>
 	</head>
@@ -21,7 +21,7 @@
 				$(window).ready(function(){
 					if ($(window).width() <= 768) {  
 
-					}     
+					}
 				});
 				$(window).resize(function(){
 					if ($(window).width() <= 768) {  
@@ -85,6 +85,42 @@
 							bouton=0
 						}
 					});
+					$("#html").mouseenter(function(){
+						$("#Thtml").css({"opacity" : "0"})
+						$("#Thtmlin").css({"opacity" : "1"})
+						$("#css").css({"opacity" : "0.5"})
+						$("#jquery").css({"opacity" : "0.5"})
+					})
+					$("#html").mouseleave(function(){
+						$("#Thtml").css({"opacity" : "1"})
+						$("#Thtmlin").css({"opacity" : "0"})
+						$("#css").css({"opacity" : "1"})
+						$("#jquery").css({"opacity" : "1"})
+					})
+					$("#css").mouseenter(function(){
+						$("#Tcss").css({"opacity" : "0"})
+						$("#Tcssin").css({"opacity" : "1"})
+						$("#html").css({"opacity" : "0.5"})
+						$("#jquery").css({"opacity" : "0.5"})
+					})
+					$("#css").mouseleave(function(){
+						$("#Tcss").css({"opacity" : "1"})
+						$("#Tcssin").css({"opacity" : "0"})
+						$("#html").css({"opacity" : "1"})
+						$("#jquery").css({"opacity" : "1"})
+					})
+					$("#jquery").mouseenter(function(){
+						$("#Tjquery").css({"opacity" : "0"})
+						$("#Tjqueryin").css({"opacity" : "1"})
+						$("#html").css({"opacity" : "0.5"})
+						$("#css").css({"opacity" : "0.5"})
+					})
+					$("#jquery").mouseleave(function(){
+						$("#Tjquery").css({"opacity" : "1"})
+						$("#Tjqueryin").css({"opacity" : "0"})
+						$("#html").css({"opacity" : "1"})
+						$("#css").css({"opacity" : "1"})
+					})
 				});
 			</script>
 			<div id="load"><div id="dot1"></div><div id="dot2"></div></div>
@@ -122,9 +158,9 @@
 					<div id="ancre3"></div>
 						<div id="div5">
 							<h1 id="T8">Mes compétences techniques</h1>
-							<div class="case" id="html"></div>
-							<div class="case" id="css"></div>
-							<div class="case" id="jquery"></div>
+							<div class="case" id="html"><h1 id="Thtml">HTML</h1><h1 id="Thtmlin">Je suis capable de créer un site statique de A à Z en usant du langage HTML</h1></div>
+							<div class="case" id="css"><h1 id="Tcss">CSS</h1><h1 id="Tcssin">J'ai de solides bases en design via le langage css qui me permettent de créer des sites tels que celui-ci</h1></div>
+							<div class="case" id="jquery"><h1 id="Tjquery">JQUERY</h1><h1 id="Tjqueryin">Mes connaissances en Jquery me permettent de réaliser des animations simples telles que des évènements au clic ou encore au passage de la souris</h1></div>
 						</div>
 						<div id="ancre4"></div>
 							<div id="div6">
