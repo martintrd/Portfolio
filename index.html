@@ -20,15 +20,49 @@
 				});
 				$(window).ready(function(){
 					if ($(window).width() <= 768) {  
-
+						$(".Tall").click(function(){
+							$("#mtopbar").css({
+								"left" : "-100vw"
+							});
+							$("#mb2").css({
+								"color" : "white"
+							});
+							$("#mb1").css({
+								"right" : "20px",
+								"transform" : "rotate(0deg)"
+							});
+							$("#mb3").css({
+								"left" : "20px",
+								"transform" : "rotate(0deg)"
+							});
+							$("#mtopbar").css({
+								"left" : "-100vw"
+							});
+						});
 					}
 				});
 				$(window).resize(function(){
-					if ($(window).width() <= 768) {  
-
-					}else{
-
-					} 
+					if ($(window).width() <= 768) {
+						$(".Tall").click(function(){
+							$("#mtopbar").css({
+								"left" : "-100vw"
+							});
+							$("#mb2").css({
+								"color" : "white"
+							});
+							$("#mb1").css({
+								"right" : "20px",
+								"transform" : "rotate(0deg)"
+							});
+							$("#mb3").css({
+								"left" : "20px",
+								"transform" : "rotate(0deg)"
+							});
+							$("#mtopbar").css({
+								"left" : "-100vw"
+							});
+						});
+					}
 				});
 				$(window).on('scroll',function() {
 					var scrollTop = $(window).scrollTop();
@@ -52,7 +86,7 @@
 						if (bouton==0) {
 							$("#mb2").css({
 								"position" : "absolute",
-								"color" : "rgb(47, 47, 47)"
+								"color" : "rgb(38, 38, 38)"
 							});
 							$("#mb1").css({
 								"right" : "10px",
